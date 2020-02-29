@@ -19,12 +19,12 @@ public class Logger
 	
 	public static void error(String msg)
 	{
-		System.out.println(msg);
+		System.err.println(msg);
 	}
 	
 	public static void fail(String msg)
 	{
-		System.out.println(msg);
+		System.err.println(msg);
 		System.exit(-1);
 	}
 }
