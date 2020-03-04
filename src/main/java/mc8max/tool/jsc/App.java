@@ -1,7 +1,5 @@
 package mc8max.tool.jsc;
 
-import java.io.File;
-
 import mc8max.tool.jsc.analyzer.StackAnalyzer;
 
 public class App 
@@ -13,9 +11,7 @@ public class App
 			Logger.fail("Missing input file.");
 		}
     	
-    	File file = new File(args[0]);
-    	StackAnalyzer analyzer = new StackAnalyzer(file);
+    	StackAnalyzer analyzer = new StackAnalyzer(args[0]);
     	analyzer.compute();
-    	analyzer.display();
     }
 }
